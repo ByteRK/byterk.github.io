@@ -333,10 +333,16 @@ span.time {
     border-radius: 5px;
     font-size: 15px;
     font-weight: 900;
+}
 
+.web_0 {
     background-size: 60px 60px;
     background-image: linear-gradient(135deg,#c7d5e0 0%,#c7d5e0 25%,white 25%,white 50%,#c7d5e0 50%,#c7d5e0 75%,white 75%,white 100%);
     animation:move 1s linear infinite;
+}
+
+.web_1 {
+    /*background:linear-gradient(90deg, rgb(255, 88, 78) 0%, rgb(255, 183, 78) 100%);*/
 }
 
 .tips {
