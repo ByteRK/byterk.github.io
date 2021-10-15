@@ -381,6 +381,12 @@ span.time {
     box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;
 }
 
+.sc-csuQGl.sw-container.sc-bRBYWo.brRCBH{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    text-decoration: none;
+}
+
 @keyframes move {
     0% {
     }100% {
