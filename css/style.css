@@ -40,6 +40,7 @@ nav a.active {
 
 html, body {
     height: 100%;
+    background-color: #ecf0f3;
     cursor: url("https://static.hackricken.top/Web/mouse/light/pointer.cur"), default;
 }
 
@@ -446,7 +447,7 @@ span.time {
     font-size: 11px;
     text-align: center;
     position: fixed;
-    bottom: 10px;
+    bottom: 15px;
     text-shadow: 1px 1px 0 #fff;
 }
 
