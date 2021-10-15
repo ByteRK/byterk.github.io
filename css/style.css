@@ -8,7 +8,7 @@
 * {
     margin: 0;
     padding: 0;
-    color: #000000;
+    color: #93acba;
     font-family: 'kk', serif;
 }
 
@@ -25,18 +25,31 @@ ul li {
 
 nav a {
     margin-left: 32px;
+    text-shadow: 1px 1px 0 #fff;
+    cursor: url("https://static.hackricken.top/Web/mouse/light/link.cur"),default;
 }
 
 nav a.active {
+    /*
     background:linear-gradient(90deg, #1E71F5, #3CDEE7);
     animation:move 7s linear infinite;
     -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    /*color: #71b3dd;*/
+    -webkit-text-fill-color:transparent;*/
+    color: #AE1100;
+}
+
+html,body{
+    height: 100%;
+    cursor: url("https://static.hackricken.top/Web/mouse/light/pointer.cur"),default;
 }
 
 body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    color: #0aafe6;
     background-color: #ecf0f3;
+
 }
 
 .container {
@@ -105,6 +118,10 @@ body {
     text-decoration: none;
 }
 
+.main a div{
+    cursor: url("https://static.hackricken.top/Web/mouse/light/link.cur"),default;
+}
+
 .bgo {
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,14 +158,27 @@ body {
     border-radius:50%;*/
 }
 
-.ato {
+.ato-box {
     width: 100px;
     height: 100px;;
     position: absolute;
     top: 37%;
     left: 33%;
     border-radius: 50%;
-    box-shadow: 2px 2px 10px 0 #b1b4b6, -2px -2px 10px 0 #ffffff;
+    box-shadow: 0 0 7px 0 #93acba;
+    animation: light 4s ease-in-out infinite;
+    transition: 0.5s;
+}
+
+.ato{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: none;
+    animation: light 4s ease-in-out infinite;
+    transition: 0.8s;
+    cursor: url("https://static.hackricken.top/Web/mouse/light/handwriting.cur"),default;
 }
 
 .ats {
@@ -159,11 +189,18 @@ body {
     left: 120px;
     border-radius: 50%;
     animation: light 4s ease-in-out infinite;
-    transition: 0.5s;
+    transition: 0.8s;
+}
+
+.ato:hover {
+    cursor: url("https://static.hackricken.top/Web/mouse/light/unavailable.cur"),default;
+    box-shadow: 0 0 10px 0 #ff1d00;
+    transform: scale(1.05) rotate(900deg);
 }
 
 .ats:hover {
-    transform: scale(1.15) rotate(720deg);
+    cursor: url("https://static.hackricken.top/Web/mouse/light/handwriting.cur"),default;
+    transform: scale(1.15) rotate(900deg);
 }
 
 .name {
@@ -173,6 +210,8 @@ body {
     line-height: 20px;
     font-size: 22px;
     text-align: center;
+    color: #93acba;
+    text-shadow: 1px 1px 0 #fff;
 }
 
 .motto {
@@ -182,6 +221,8 @@ body {
     width: fit-content;
     height: 20px;
     line-height: 20px;
+    color: #93acba;
+    text-shadow: 1px 1px 0 #fff;
 }
 
 .hander  #nav-menu a:first-child{
@@ -219,23 +260,24 @@ body {
     background-color: #ecf0f3;
     border-radius:10px;
     box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;
-
-
 }
 
 .navo_button a{
-    height: 32px;
+    height: 64px;
     line-height: 32px;
 }
 
 .navo_button a i{
-    background:linear-gradient(90deg, #1E71F5, #3CDEE7);
-    animation:move 4s linear infinite;
+    /*background:linear-gradient(90deg, #1E71F5, #3CDEE7);
     -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color:transparent;*/
+    color: #93acba;
+    text-shadow: 1px 1px 0 #fff;
+    animation:move 4s linear infinite;
 }
 .navo ul li:hover {
     transform: scale(1.15);
+    cursor: url("https://static.hackricken.top/Web/mouse/light/person.cur"),default;
 }
 
 .about {
@@ -294,6 +336,7 @@ span.time {
     padding: 10px 0 0 20px;
     margin-left: 15px;
     border-left: 2px solid #aaa;
+    text-shadow: 1px 1px 0 #fff;
 }
 
 .track-list li .node-icon {
@@ -322,6 +365,15 @@ span.time {
     vertical-align: middle;
 }
 
+.node-icon img{
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.ps {
+    color: #6495ed80;
+    text-shadow: 1px 1px 0 #fff;
+}
+
 .web {
     width: 75%;
     height: 20px;
@@ -336,13 +388,40 @@ span.time {
 }
 
 .web_0 {
+    width: 225px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
     background-size: 60px 60px;
+    text-shadow: 1px 1px 0 #fff;
     background-image: linear-gradient(135deg,#c7d5e0 0%,#c7d5e0 25%,white 25%,white 50%,#c7d5e0 50%,#c7d5e0 75%,white 75%,white 100%);
     animation:move 1s linear infinite;
+    transition: 0.5s;
+}
+
+.web_0:hover {
+    width: 240px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 20px;
 }
 
 .web_1 {
-    /*background:linear-gradient(90deg, rgb(255, 88, 78) 0%, rgb(255, 183, 78) 100%);*/
+    width: 225px;
+    height: 20px;
+    line-height: 20px;
+    color: #AE1100;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff;
+
+    transition: 0.5s;
+}
+
+.web_1:hover {
+    width: 250px;
+    height: 25px;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .tips {
@@ -355,6 +434,7 @@ span.time {
     padding: 10px;
     position: relative;
     background-color: #f8f8f8;
+    text-shadow: 1px 1px 0 #fff;
     font-size: 15px;
 }
 
@@ -365,11 +445,9 @@ span.time {
     text-align: center;
     position: fixed;
     bottom: 10px;
+    text-shadow: 1px 1px 0 #fff;
 }
 
-.ps {
-    color: #6495ed80;
-}
 
 .china {
     width: 90px;

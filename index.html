@@ -13,11 +13,11 @@
     <link href="css/text.css" rel="stylesheet">
     <link href="font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script>
-        var _hmt = _hmt || [];
+        const _hmt = _hmt || [];
         (function() {
-            var hm = document.createElement("script");
+            const hm = document.createElement("script");
             hm.src = "https://hm.baidu.com/hm.js?3029adc6f31213dd35b62e446b03affd";
-            var s = document.getElementsByTagName("script")[0];
+            const s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
@@ -38,9 +38,9 @@
         <section class="home-me-section active-section"><!-- 首页开始 -->
             <div class="main"><!-- 首页内容 -->
                 <img class="bgo" src="img/bgo.jpg" alt="哎呀！图片不见了"/>
-
+                <div class="ato-box">
                         <img class="ato" onclick="alert('戳我干嘛 ￣へ￣')" src="https://static.hackricken.top/head-p/Ricken.png" alt="哎呀！图片不见了"/>
-
+                </div>
                 <div class="name" onclick="this.innerHTML=(this.innerHTML==='Ricken'?'Orz':'Ricken');">Ricken</div>
                 <div class="motto"
                      onclick="this.innerHTML=(this.innerHTML==='如果不开心就来杯可乐ba🥤'?'开心点,少喝可乐':'如果不开心就来杯可乐ba🥤');">
@@ -82,14 +82,14 @@
             <div class="main"><!-- 关于内容 -->
                 <img class="bgt" src="img/bgt.jpg" alt="哎呀！图片不见了"/>
                 <img class="ats" src="https://static.hackricken.top/head-p/Ricken.png" alt="哎呀！图片不见了"/>
-                <div class="about">
-                    <p>>_
+                <div class="about" style="text-shadow: 1px 1px 0 #fff;">
+                    <p style="color: #29617b">>_
                         <br>野生菜鸡程序猿
                         <br>手残硬件攻城狮
                     </p>
                 </div>
-                <div class="about" style="margin-top:20px;">
-                    <p>
+                <div class="about" style="margin-top:20px;text-shadow: 1px 1px 0 #fff;">
+                    <p style="color: #29617b">
                         说实话
                         <br>关于我自己我也很迷茫
                         <br>说我是搞硬件的吧，只会造轮子
@@ -202,7 +202,7 @@
                                 <li>
                                     <i class="node-icon"><img src="img/tb.svg" alt="哎呀！图片不见了"></i>
                                     <span class="time">2021-05-30</span>
-                                    <span class="txt">白嫖"Vercel"服务器</span>
+                                    <span class="txt">白捡"Vercel"服务器</span>
                                 </li>
                                 <li>
                                     <i class="node-icon"><img src="img/tb.svg" alt="哎呀！图片不见了"></i>
@@ -241,7 +241,7 @@
                 <a href="#" target="_self">
                     <div class="web web_0"><i class="fa fa-bug fa-spin"></i>努力开发中<i class="fa fa-bug fa-spin"></i></div>
                 </a><!-- 站点三 -->
-                <div class="tips"><a>所有站点均正常运行</a></div>
+                <div class="tips"><a style="color: #2ecc71;">所有站点均正常运行</a></div>
             </div><!-- 站点内容结束 -->
         </section><!-- 站点结束 -->
     </div><!-- 内容结束 -->
@@ -249,10 +249,15 @@
 </div><!-- 主体结束 -->
 <img src="img/China.svg" class="china" alt="哎呀！图片不见了"/> <!--右下角国旗 -->
 <div class="footer"><!-- 底部版权 -->
-    <a>Build&nbsp;By&nbsp;DiDiBiu&nbsp;<i class="fa fa-spin" style="color: red">❤️</i>&nbsp;Copyright&nbsp;<i class="fa fa-copyright"></i>2021</a>
+    <a>Build&ensp;By&ensp;Ricken&ensp;<i class="fa fa-spin" style="color: red">❤️</i>&ensp;Copyright&ensp;<i class="fa fa-copyright"></i>2021</a>
     <!-- <span id="sitetime"></span>运行时间 -->
 </div><!-- 版权结束 -->
 <div id="tp-weather-widget"></div><!-- 天气插件 -->
+
+<script type="text/javascript">
+    console.clear();
+    console.log("\n %c🌸 小陈的名片 V2.0 By Ricken\'s | https://kk.hackerjk.top/ 🌸","color:#fff;background: linear-gradient(to right , #7A88FF, #9ba5ff);padding:5px;border-radius: 15px;");
+</script>
 
 <script>
     (function (a, h, g, f, e, d, c, b) {
@@ -260,8 +265,8 @@
             d = h.createElement(g);
             c = h.getElementsByTagName(g)[0];
             d.src = e;
-            d.charset = "utf-8";
-            d.async = 1;
+            //d.charset = "utf-8";
+            d.async = true;
             c.parentNode.insertBefore(d, c)
         };
         a["SeniverseWeatherWidgetObject"] = f;
