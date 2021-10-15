@@ -26,7 +26,7 @@ ul li {
 nav a {
     margin-left: 32px;
     text-shadow: 1px 1px 0 #fff;
-    cursor: url("https://static.hackricken.top/Web/mouse/light/link.cur"),default;
+    cursor: url("https://static.hackricken.top/Web/mouse/light/link.cur"), default;
 }
 
 nav a.active {
@@ -38,9 +38,9 @@ nav a.active {
     color: #AE1100;
 }
 
-html,body{
+html, body {
     height: 100%;
-    cursor: url("https://static.hackricken.top/Web/mouse/light/pointer.cur"),default;
+    cursor: url("https://static.hackricken.top/Web/mouse/light/pointer.cur"), default;
 }
 
 body {
@@ -118,8 +118,8 @@ body {
     text-decoration: none;
 }
 
-.main a div{
-    cursor: url("https://static.hackricken.top/Web/mouse/light/link.cur"),default;
+.main a div {
+    cursor: url("https://static.hackricken.top/Web/mouse/light/link.cur"), default;
 }
 
 .bgo {
@@ -141,7 +141,7 @@ body {
     position: absolute;
     top: 37%;
     left: 33%;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: #ecf0f3;
     /*box-shadow: 2px 2px 10px 0 #b1b4b6, -2px -2px 10px 0 #ffffff;*/
 }
@@ -151,7 +151,7 @@ body {
     height: 100px;
     position: absolute;
     padding: 1px;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: #ff0000;
     /*width: 100%;
     height: 100%;
@@ -170,15 +170,15 @@ body {
     transition: 0.5s;
 }
 
-.ato{
-    width:100%;
+.ato {
+    width: 100%;
     height: 100%;
     border-radius: 50%;
     position: absolute;
     box-shadow: none;
     animation: light 4s ease-in-out infinite;
     transition: 0.8s;
-    cursor: url("https://static.hackricken.top/Web/mouse/light/handwriting.cur"),default;
+    cursor: url("https://static.hackricken.top/Web/mouse/light/handwriting.cur"), default;
 }
 
 .ats {
@@ -193,13 +193,13 @@ body {
 }
 
 .ato:hover {
-    cursor: url("https://static.hackricken.top/Web/mouse/light/unavailable.cur"),default;
+    cursor: url("https://static.hackricken.top/Web/mouse/light/unavailable.cur"), default;
     box-shadow: 0 0 10px 0 #ff1d00;
     transform: scale(1.05) rotate(900deg);
 }
 
 .ats:hover {
-    cursor: url("https://static.hackricken.top/Web/mouse/light/handwriting.cur"),default;
+    cursor: url("https://static.hackricken.top/Web/mouse/light/handwriting.cur"), default;
     transform: scale(1.15) rotate(900deg);
 }
 
@@ -225,8 +225,8 @@ body {
     text-shadow: 1px 1px 0 #fff;
 }
 
-.hander  #nav-menu a:first-child{
-    margin-left:0;
+.hander #nav-menu a:first-child {
+    margin-left: 0;
 }
 
 .navo {
@@ -258,26 +258,28 @@ body {
     width: 32px;
     height: 32px;
     background-color: #ecf0f3;
-    border-radius:10px;
+    border-radius: 10px;
     box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;
+    cursor: url("https://static.hackricken.top/Web/mouse/light/link.cur"), default;
 }
 
-.navo_button a{
+.navo_button a {
     height: 64px;
     line-height: 32px;
+    cursor: url("https://static.hackricken.top/Web/mouse/light/link.cur"), default;
 }
 
-.navo_button a i{
+.navo_button a i {
     /*background:linear-gradient(90deg, #1E71F5, #3CDEE7);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;*/
     color: #93acba;
     text-shadow: 1px 1px 0 #fff;
-    animation:move 4s linear infinite;
+    animation: move 4s linear infinite;
 }
+
 .navo ul li:hover {
     transform: scale(1.15);
-    cursor: url("https://static.hackricken.top/Web/mouse/light/person.cur"),default;
 }
 
 .about {
@@ -365,7 +367,7 @@ span.time {
     vertical-align: middle;
 }
 
-.node-icon img{
+.node-icon img {
     text-shadow: 1px 1px 0 #fff;
 }
 
@@ -394,8 +396,8 @@ span.time {
     text-align: center;
     background-size: 60px 60px;
     text-shadow: 1px 1px 0 #fff;
-    background-image: linear-gradient(135deg,#c7d5e0 0%,#c7d5e0 25%,white 25%,white 50%,#c7d5e0 50%,#c7d5e0 75%,white 75%,white 100%);
-    animation:move 1s linear infinite;
+    background-image: linear-gradient(135deg, #c7d5e0 0%, #c7d5e0 25%, white 25%, white 50%, #c7d5e0 50%, #c7d5e0 75%, white 75%, white 100%);
+    animation: move 1s linear infinite;
     transition: 0.5s;
 }
 
@@ -451,23 +453,37 @@ span.time {
 
 .china {
     width: 90px;
-    right:0;
-    position:fixed;
-    bottom:0;
+    right: 0;
+    position: fixed;
+    bottom: 0;
     border-radius: 8px;
     padding-bottom: 25px;
     box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;
 }
 
-.sc-csuQGl.sw-container.sc-bRBYWo.brRCBH{
+.sc-csuQGl.sw-container.sc-bRBYWo.brRCBH {
     -webkit-user-select: none;
     -moz-user-select: none;
     text-decoration: none;
 }
 
+.kk-heart {
+    animation: kk-star 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes kk-star {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
 @keyframes move {
     0% {
-    }100% {
-         background-position:60px 0;
-     }
+    }
+    100% {
+        background-position: 60px 0;
+    }
 }
