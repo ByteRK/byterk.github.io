@@ -1,5 +1,12 @@
 .dfDWUQ {
-    background: #ecf0f3;
-    box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;
-    text-shadow: 1px 1px 0 #fff;
+    background: #ecf0f3!important;
+    box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff!important;
+    text-shadow: 1px 1px 0 #fff!important;
+    border-radius: 8px!important;
+}
+
+.sw-bar-bubble-icon {
+    background: #93acba!important;
+    box-shadow: inset 1px 1px 10px #b1b4b6, inset 1px 1px 10px #ffffff!important;
+    border-radius: 8px!important;
 }
