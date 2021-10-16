@@ -5,6 +5,10 @@
     border-radius: 8px!important;
 }
 
+.sw-bar-bubble {
+    overflow: visible;
+}
+
 .sw-bar-bubble-icon {
     filter: drop-shadow(0 0 5px #93acba);
     overflow: visible;
