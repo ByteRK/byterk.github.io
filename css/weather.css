@@ -6,7 +6,5 @@
 }
 
 .sw-bar-bubble-icon {
-    background: #93acba!important;
-    box-shadow: inset 1px 1px 3px #4e4e4e, inset -1px -1px 3px #ffffff!important;
-    border-radius: 8px!important;
+    filter: drop-shadow(0 0 5px #93acba);
 }
