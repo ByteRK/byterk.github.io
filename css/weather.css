@@ -1,4 +1,4 @@
-.dfDWUQ {
+.sw-container {
     background: #ecf0f3!important;
     box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff!important;
     text-shadow: 1px 1px 0 #fff!important;
@@ -7,6 +7,6 @@
 
 .sw-bar-bubble-icon {
     background: #93acba!important;
-    box-shadow: inset 1px 1px 10px #b1b4b6, inset 1px 1px 10px #ffffff!important;
+    box-shadow: inset 1px 1px 3px #4e4e4e, inset -1px -1px 3px #ffffff!important;
     border-radius: 8px!important;
 }
