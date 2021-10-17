@@ -310,19 +310,21 @@ Ricken
 
     <!-- 加载动画 -->
     <div id="kk_loading_bg" style="z-index: 99999999;">
-        <div id="kk_loading_center">
-            <div class="kk_loading" id="kk_loading">
-                <div style="--x:0"></div>
-                <div style="--x:1"></div>
-                <div style="--x:2"></div>
-                <div style="--x:3"></div>
-                <!--
-        <div style="--x:4"></div>
-        <div style="--x:5"></div>
-        -->
+        <div id="kk_loading">
+            <div class='wrap' id='wrap1'>
+                <div class='part' id='part1'></div>
             </div>
-            <div class="kk_loading_text">
-                <a>&ensp;KK正在发数据给你……&ensp;</a>
+
+            <div class='wrap' id='wrap2'>
+                <div class='part' id='part2'></div>
+            </div>
+
+            <div class='wrap' id='wrap3'>
+                <div class='part' id='part3'></div>
+            </div>
+
+            <div class='wrap' id='wrap4'>
+                <div class='part' id='part4'></div>
             </div>
         </div>
     </div>
@@ -344,14 +346,6 @@ Ricken
 
     <!--加载动画样式-->
     <style>
-        /*
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        */
-
         #kk_loading_bg {
             width: 100%;
             height: 100%;
@@ -361,77 +355,99 @@ Ricken
             top: 0px;
         }
 
-        #kk_loading_center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            min-height: 100vh;
-            flex-direction: column;
-        }
-
         #kk_loading {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .kk_loading div {
-            position: relative;
-            width: 40px;
-            height: 200px;
-            margin: 20px;
-            overflow: hidden;
-            -webkit-backface-visibility: hidden;
-            -webkit-transform: translate3d(0, 0, 0);
-            border-radius: 50px;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), #edf1f4);
-            border: 2px solid #edf1f4;
-            box-sizing: border-box;
-            box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
-                -15px -15px 20px #fff,
-                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
-                inset 5px 5px 5px rgba(0, 0, 0, 0.05);
-        }
-
-        .kk_loading div::before {
-            content: "";
+            width: 300px;
+            height: 100px;
             position: absolute;
             top: 0;
+            right: 0;
             left: 0;
-            width: 36px;
-            height: 36px;
+            bottom: 0;
+            margin: auto;
+            opacity: 0;
+            animation: fadeIn 1s 1;
+            animation-fill-mode: forwards;
+        }
+
+        .wrap {
+            animation: rotate 1000ms infinite ease-in-out alternate, zindex 2000ms infinite ease-in-out;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .part {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.1) 65%, rgba(0, 0, 0, 0.1));
+            background-color: #E3746B;
             border-radius: 50%;
-            box-shadow: inset -5px -5px 5px rgba(0, 0, 0, 0.1),
-                0 420px 0 400px #2196f3;
-            animation: kk_loading_animate 2.5s ease-in-out infinite;
-            animation-delay: calc(var(--x) * -0.3s);
-            transform: translateY(160px);
+            animation: scale 1000ms infinite ease-in-out alternate;
+            animation-delay: -500ms;
+            transform: scale(0.5);
         }
 
-        .kk_loading_text {
-            width: fit-content;
-            box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;
-            height: fit-content;
-            border-radius: 8px;
-            font-size: larger;
-            text-shadow: 1px 1px 0 #fff;
+        .part:after {
+            content: '';
+            width: 100px;
+            height: 10px;
+            background: #eee;
+            position: absolute;
+            top: 130px;
+            border-radius: 50%;
         }
 
-        @keyframes kk_loading_animate {
-            0% {
-                transform: translateY(160px);
-                filter: hue-rotate(0deg);
-            }
+        #wrap2 {
+            animation-delay: -1000ms;
+        }
 
-            50% {
-                transform: translateY(0px);
-                filter: hue-rotate(180deg);
-            }
+        #part2 {
+            background-color: #397BF9;
+            animation-delay: -1500ms;
+        }
 
+        #wrap3 {
+            animation-delay: -1500ms;
+        }
+
+        #part3 {
+            background-color: #F4B400;
+            animation-delay: -2000ms;
+        }
+
+        #wrap4 {
+            animation-delay: -2500ms;
+        }
+
+        #part4 {
+            background-color: #0F9D58;
+            animation-delay: -3000ms;
+        }
+
+        @keyframes rotate {
             100% {
-                transform: translateY(160px);
-                filter: hue-rotate(360deg);
+                transform: translateX(200px);
+            }
+        }
+
+        @keyframes scale {
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes zindex {
+            25% {
+                z-index: 1;
+            }
+
+            75% {
+                z-index: -1;
+            }
+        }
+
+        @keyframes fadeIn {
+            100% {
+                opacity: 1;
             }
         }
     </style>
