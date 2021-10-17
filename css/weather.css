@@ -9,6 +9,10 @@
     overflow: visible;
     -webkit-backface-visibility: visible;
     -webkit-transform: translate3d(0, 0, 0);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    text-decoration: none;
 }
 
 .sw-bar-bubble-icon {
