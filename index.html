@@ -37,8 +37,9 @@ Ricken
     <link href="css/text.css" rel="stylesheet">
     <link href="font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/weather.css" rel="stylesheet">
-
-
+    <link href="css/loading.css" rel="stylesheet">
+    <link href="QWeather-Icons-1.0.2/qweather-icons.css" rel="stylesheet">
+    <link href="css/kk-weather.css" rel="stylesheet">
 
     <!--百度统计-->
     <script>
@@ -115,7 +116,8 @@ Ricken
                             </ul>
                         </div>
                     </div>
-                </div><!-- 首页内容结束 -->
+                </div>
+                <!-- 首页内容结束 -->
             </section><!-- 首页结束 -->
             <section class="about-exp-section">
                 <!-- 关于开始 -->
@@ -139,7 +141,8 @@ Ricken
                             <br>到目前也还只是个"Flag"
                         </p>
                     </div>
-                </div><!-- 关于内容结束 -->
+                </div>
+                <!-- 关于内容结束 -->
             </section><!-- 关于结束 -->
             <section class="course-exp-section">
                 <!-- 历程开始 -->
@@ -308,6 +311,23 @@ Ricken
     </div>
     <!-- 版权结束 -->
 
+    <!--KK天气-->
+    <div class="kk-weather" id="kk_weather">
+        <div class="kk-weather-box">
+            <div class="kk-weather-icon">
+                <i class="qi-409" id="kk_icon"></i>
+            </div>
+            <div class="kk-weather-data">
+                <div class="kk-weather-city">
+                    <a id="kk_city">你在哪</a>
+                </div>
+                <div class="kk-weather-wd">
+                    <i class="fa fa-thermometer" style="padding-right:5px;"></i><a id="kk_temp">11</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--天气结束-->
 
     <!-- 加载动画 -->
     <div id="kk_loading_bg" style="z-index: 99999999;">
@@ -330,137 +350,23 @@ Ricken
         </div>
     </div>
 
-    </div>
-
-    <!-- 天气部件 -->
-    <div id="tp-weather-widget"></div>
-
-
     <!-- 下面是Js -->
-    <script src="./js/kk.js"></script><!-- KK -->
+
+    <script src="./js/kk.js"></script><!-- KK-->
+    <script src="js/kk-weather.js"></script>
+
     <script src="./js/Rightclick.js"></script><!-- 禁用右键 -->
     <script src="./js/index.js"></script><!-- 核心插件 -->
-    <!--<script src="./js/weather.js"></script>天气插件 -->
     <script src="./js/Mouse.js"></script><!-- 点击烟花特效 -->
     <!-- <script src="js/Sitetime.js"></script>运行时间 -->
-
-    <!--加载动画样式-->
-    <style>
-        #kk_loading_bg {
-            width: 100%;
-            height: 100%;
-            background-color: #edf1f4;
-            position: fixed;
-            margin: 0px;
-            top: 0px;
-        }
-
-        #kk_loading {
-            width: 300px;
-            height: 100px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            margin: auto;
-            opacity: 0;
-            animation: fadeIn 1s 1;
-            animation-fill-mode: forwards;
-        }
-
-        .wrap {
-            animation: rotate 1000ms infinite ease-in-out alternate, zindex 2000ms infinite ease-in-out;
-            position: absolute;
-            z-index: 0;
-        }
-
-        .part {
-            width: 100px;
-            height: 100px;
-            background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.1) 65%, rgba(0, 0, 0, 0.1));
-            background-color: #E3746B;
-            border-radius: 50%;
-            animation: scale 1000ms infinite ease-in-out alternate;
-            animation-delay: -500ms;
-            transform: scale(0.5);
-        }
-
-        .part:after {
-            content: '';
-            width: 100px;
-            height: 10px;
-            background: #eee;
-            position: absolute;
-            top: 130px;
-            border-radius: 50%;
-        }
-
-        #wrap2 {
-            animation-delay: -1000ms;
-        }
-
-        #part2 {
-            background-color: #397BF9;
-            animation-delay: -1500ms;
-        }
-
-        #wrap3 {
-            animation-delay: -1500ms;
-        }
-
-        #part3 {
-            background-color: #F4B400;
-            animation-delay: -2000ms;
-        }
-
-        #wrap4 {
-            animation-delay: -2500ms;
-        }
-
-        #part4 {
-            background-color: #0F9D58;
-            animation-delay: -3000ms;
-        }
-
-        @keyframes rotate {
-            100% {
-                transform: translateX(200px);
-            }
-        }
-
-        @keyframes scale {
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        @keyframes zindex {
-            25% {
-                z-index: 1;
-            }
-
-            75% {
-                z-index: -1;
-            }
-        }
-
-        @keyframes fadeIn {
-            100% {
-                opacity: 1;
-            }
-        }
-    </style>
-
-    <!--退出加载动画-->
     <script>
         document.onreadystatechange = function () {
-            if (document.readyState == "complete") {
-                var loading = document.getElementById('kk_loading_bg');
+            if (document.readyState === "complete") {
+                const loading = document.getElementById('kk_loading_bg');
                 loading.style.display = 'none';
             }
         }
-    </script>
+    </script><!--退出加载动画-->
 
 </body>
 
