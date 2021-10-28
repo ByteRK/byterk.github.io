@@ -10,6 +10,7 @@
     height: 50px;
     border-radius: 8px;
     box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;
+    background-image: linear-gradient(to top, #dfe9f38a 0%, #ffffff91 100%);
 }
 
 .kk-weather-icon {
@@ -39,8 +40,8 @@
 .kk-weather-data {
     float: right;
     border-radius: 8px;
-    padding: 5px 9px 0 10px;
-    box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;
+    padding: 5px 8px 0 0;
+    /*box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;*/
 }
 
 .kk-weather-city {
@@ -61,7 +62,8 @@
     text-align: center;
     text-shadow: 1px 1px 0 #fff;
     font-style: normal;
-    padding-top: 5px;
+    padding-top: 2px;
+    padding-bottom: 3px;
 }
 
 .kk-weather-wd a {
