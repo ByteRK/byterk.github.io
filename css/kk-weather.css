@@ -1,5 +1,5 @@
 .kk-weather {
-    padding-top: 20px;
+    padding-top: 15px;
     padding-left: 10px;
     position: fixed;
     display: none;
@@ -7,7 +7,7 @@
 
 .kk-weather-box {
     width: fit-content;
-    height: 60px;
+    height: 50px;
     border-radius: 8px;
     box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;
 }
@@ -15,8 +15,8 @@
 .kk-weather-icon {
     float: left;
     width: 46px;
-    height: 46px;
-    padding: 7px 10px 7px 10px;
+    height: 40px;
+    padding: 5px 5px 5px 5px;
     text-shadow: 1px 1px 0 #fff;
     /*filter: drop-shadow(0 0 5px #93acba);*/
     overflow: visible;
@@ -30,22 +30,22 @@
 }
 
 #kk_icon {
-    font-size: 40px;
-    line-height: 46px;
-    width: 46px;
-    height: 46px;
+    font-size: 30px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 .kk-weather-data {
     float: right;
     border-radius: 8px;
-    padding: 5px 13px 5px 13px;
+    padding: 5px 9px 0 10px;
     box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;
 }
 
 .kk-weather-city {
-    height: 25px;
-    line-height: 25px;
+    height: 20px;
+    line-height: 20px;
     text-align: center;
     text-shadow: 1px 1px 0 #fff;
 }
@@ -56,11 +56,12 @@
 }
 
 .kk-weather-wd {
-    height: 25px;
-    line-height: 25px;
+    height: 20px;
+    line-height: 20px;
     text-align: center;
     text-shadow: 1px 1px 0 #fff;
     font-style: normal;
+    padding-top: 5px;
 }
 
 .kk-weather-wd a {
