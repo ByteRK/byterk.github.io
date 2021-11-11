@@ -12,8 +12,8 @@ class KK {
                     console.log("\n\n天气获取失败！");
                 }else if(json.state === 418){
                     console.log("\n\n天气获取成功！");
-                    document.getElementById("kk_icon").className= 'qi-'+json.icon;
-                    document.getElementById('kk_temp').innerHTML = json.temp;
+                    document.getElementById("kk_icon").className= 'qi-'+json.now.icon;
+                    document.getElementById('kk_temp').innerHTML = json.now.temp;
                     document.getElementById('kk_city').innerHTML = json.city;
                     document.getElementById('kk_weather').style.display = 'block';
                 }else{
@@ -25,6 +25,5 @@ class KK {
         }
     }
 }
-
 const kk=new KK()
 kk.init()
