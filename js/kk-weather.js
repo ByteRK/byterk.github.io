@@ -1,6 +1,6 @@
 class KK {
     init(){
-        const url = "https://api.hackerjk.top/Tools/kk_weather.php";
+        const url = "https://api.hackerjk.top/tools/kk_weather.php";
         const request = new XMLHttpRequest();
         request.open("get", url,true);
         request.send();
