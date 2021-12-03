@@ -18,13 +18,13 @@ request.onload = function () {
                 "<span class=\"txt\">" + json[i]['text'] + "</span>"
             list.append(newLi);
         }
-        console.log("\n\n历程加载成功");
+        console.log("%c历程加载成功", "color: #16a085");
     } else {
         let newLi = document.createElement("li");
         newLi.innerHTML = "<i class=\"node-icon\"><img alt=\"哎呀！图片不见了\" src=\"img/tb.svg\"></i>" +
             "<span class=\"time\">Time获取失败</span>" +
             "<span class=\"txt\">Text获取失败</span>"
         list.append(newLi);
-        console.log("\n\n历程获取失败");
+        console.log("%c历程获取失败", "color: #FC427B");
     }
 }
