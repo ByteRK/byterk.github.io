@@ -11,18 +11,15 @@ Ricken
 
 <head>
     <title>Ricken | 高级CV攻城狮</title>
-    
-    <!--百度统计-->
+
+    <!--小陈统计-->
     <script>
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?af15895ded1154678658024a002db04b";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
-        })();
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://api.hackerjk.top/web/statistics.php?w=ricken_cn');
+        xhr.setRequestHeader('referrer', document.referrer ? document.referrer : 'yuio');
+        xhr.send();
     </script>
-        
+
     <!--元信息-->
     <meta charset="utf-8" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
         name="viewport">
@@ -247,12 +244,11 @@ Ricken
 
     <!-- 下面是Js -->
     <script src="./js/loading.js"></script><!--时间轴加载-->
-    <script src="./js/kk.js"></script><!-- KK-->
-    <script src="./js/kk-weather.js"></script>
-
-    <script src="./js/Rightclick.js"></script><!-- 禁用右键 -->
-    <script src="./js/index.js"></script><!-- 核心插件 -->
-    <script src="./js/Mouse.js"></script><!-- 点击烟花特效 -->
+    <script src="./js/kk.js"></script><!--KK-->
+    <script src="./js/kk-weather.js"></script><!--小陈天气-->
+    <script src="./js/Rightclick.js"></script><!--禁用右键 -->
+    <script src="./js/index.js"></script><!--核心插件 -->
+    <script src="./js/Mouse.js"></script><!--点击烟花特效 -->
     <!-- <script src="./js/Sitetime.js"></script>运行时间 -->
     <script>
         document.onreadystatechange = function () {
@@ -261,7 +257,8 @@ Ricken
                 loading.style.display = 'none';
             }
         }
-    </script><!--退出加载动画-->
+    </script>
+    <!--退出加载动画-->
 
 </body>
 
