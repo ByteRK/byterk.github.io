@@ -1,6 +1,6 @@
 @font-face {
     font-family: kk;
-    src: url('https://files.hackricken.top/two.ttf') format('truetype');
+    src: url('https://files-upyun.ricken.cn/two.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -26,7 +26,7 @@ ul li {
 nav a {
     margin-left: 32px;
     text-shadow: 1px 1px 0 #fff;
-    cursor: url("https://static.hackricken.top/Web/mouse/light/link.cur"), default;
+    cursor: url("https://static-upyun.ricken.cn/Web/mouse/light/link.cur"), default;
 }
 
 nav a.active {
@@ -41,7 +41,7 @@ nav a.active {
 html, body {
     height: 100%;
     background-color: #ecf0f3;
-    cursor: url("https://static.hackricken.top/Web/mouse/light/pointer.cur"), default;
+    cursor: url("https://static-upyun.ricken.cn/Web/mouse/light/pointer.cur"), default;
 }
 
 body {
@@ -124,7 +124,7 @@ body {
 }
 
 .main a div {
-    cursor: url("https://static.hackricken.top/Web/mouse/light/link.cur"), default;
+    cursor: url("https://static-upyun.ricken.cn/Web/mouse/light/link.cur"), default;
 }
 
 .bgo {
@@ -183,7 +183,7 @@ body {
     box-shadow: none;
     animation: light 4s ease-in-out infinite;
     transition: 0.8s;
-    cursor: url("https://static.hackricken.top/Web/mouse/light/handwriting.cur"), default;
+    cursor: url("https://static-upyun.ricken.cn/Web/mouse/light/handwriting.cur"), default;
 }
 
 .ats {
@@ -198,13 +198,13 @@ body {
 }
 
 .ato:hover {
-    cursor: url("https://static.hackricken.top/Web/mouse/light/unavailable.cur"), default;
+    cursor: url("https://static-upyun.ricken.cn/Web/mouse/light/unavailable.cur"), default;
     box-shadow: 0 0 10px 0 #ff1d00;
     transform: scale(1.05) rotate(900deg);
 }
 
 .ats:hover {
-    cursor: url("https://static.hackricken.top/Web/mouse/light/handwriting.cur"), default;
+    cursor: url("https://static-upyun.ricken.cn/Web/mouse/light/handwriting.cur"), default;
     transform: scale(1.15) rotate(900deg);
 }
 
@@ -265,13 +265,13 @@ body {
     background-color: #ecf0f3;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;
-    cursor: url("https://static.hackricken.top/Web/mouse/light/link.cur"), default;
+    cursor: url("https://static-upyun.ricken.cn/Web/mouse/light/link.cur"), default;
 }
 
 .navo_button a {
     height: 64px;
     line-height: 32px;
-    cursor: url("https://static.hackricken.top/Web/mouse/light/link.cur"), default;
+    cursor: url("https://static-upyun.ricken.cn/Web/mouse/light/link.cur"), default;
 }
 
 .navo_button a i {
